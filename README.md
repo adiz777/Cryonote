@@ -1,105 +1,119 @@
+# CryoNote - Secure Note-Taking Web App
 
-# CryoNote
+CryoNote is a secure, cyberpunk-themed note-taking web application built for agents, operatives, or anyone who values keeping their notes encrypted and safe. With a focus on minimalist design and privacy, CryoNote offers features like self-destructing notes, secure password authentication, and encrypted storage.
 
-CryoNote is a secure, cyberpunk-themed note-taking app that allows users to upload, store, and view notes on Google Drive. With neon-themed styling and a sleek dark mode, CryoNote provides a visually appealing, functional, and secure experience for managing your notes.
-
-## Features
-- Upload and manage files on Google Drive.
-- View and edit your notes directly in the app.
-- Neon cyberpunk theme with smooth hover effects and glowing text.
-- Dark mode for an immersive experience.
-
-## Tech Stack
-- **Frontend**: React.js, Tailwind CSS, Google Drive API
-- **Styling**: Custom Neon Effects using CSS
-- **Hosting**: Vercel/Netlify (can be deployed on any static hosting platform)
-
-## Installation
-
-To run CryoNote locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/cryonote.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd cryonote
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
-
-## CSS Overview
-
-The app uses a custom **cyberpunk theme** with neon effects and dark mode styling. Below are the key CSS features:
-
-### General Body Styles
-- **Background**: Dark background (`#1f1f1f`) for a cyberpunk look.
-- **Font**: Roboto, sans-serif for a clean, modern feel.
-- **Text Color**: White (`#fff`) text for contrast.
-
-### Neon Text Effects
-- **Neon Blue**: `text-neon-blue` applies a glowing neon blue effect.
-- **Neon Pink**: `text-neon-pink` applies a glowing neon pink effect.
-- **Neon Green**: `text-neon-green` applies a glowing neon green effect.
-- **Neon Yellow**: `text-neon-yellow` applies a glowing neon yellow effect.
-- **Neon Orange**: `text-neon-orange` applies a glowing neon orange effect.
-
-### Dark Purple Background
-- **Background Color**: `bg-dark-purple` applies a deep, dark purple background (`#1c1b2f`) for major sections.
-
-### Neon Button Styles
-- **Buttons**: Buttons like `.neon-btn` use neon blue for the border and text color, transitioning to a neon blue background on hover.
-
-### Navbar Styles
-- **Navbar**: The navbar has a cyberpunk dark background (`#2a2a3c`) with neon blue links that turn neon pink on hover.
-- **Active Links**: Active links glow with neon blue, creating a futuristic look.
-
-### File List Styles
-- **File List**: Files are displayed in a list with hover effects (`scale(1.05)`) to enhance interaction.
-
-### Input Fields
-- **File Inputs & Text Areas**: Input fields and text areas have a transparent background with neon blue borders that turn neon pink on focus.
-
-### Editor Page Styling
-- **Upload Button**: A neon blue upload button that changes to neon blue on hover.
-
-### Neon Box Shadows for Cards
-- **Cards**: Cards have a soft neon blue box shadow and a border with smooth hover effects.
-
-### Layout & Responsiveness
-- **Grid Layout**: The layout is designed using CSS Grid, making it responsive for smaller screens.
-- **Mobile First**: Tailored for mobile-first development, with optimized font sizes and grid layouts for smaller screens.
-- **Responsive Breakpoints**:
-  - **Small Screens**: Adjusts font sizes and grid columns for better visibility.
-  - **Medium & Large Screens**: Changes the number of columns in the grid based on screen size.
-
-### Dark Mode Styling
-- **Dark Mode**: The entire app follows a dark mode design with soft neon accents for an immersive and futuristic experience.
-
-## Contributing
-
-Contributions to CryoNote are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Submit a pull request with a description of your changes.
-
-## License
-
-This project is licensed under the MIT License.
+This app is designed with a sleek cyberpunk neon aesthetic and a dark mode theme. It includes features that make it feel like a tool used by secret organizations, agents, or intelligence operatives. With encryption at its core, your notes are never compromised.
 
 ---
 
-Enjoy using **CryoNote** and experience secure, neon-powered note-taking like never before!
+## Features:
+
+### 🔐 Secure Authentication:
+- **Login System**: Secure login with encrypted passwords.
+- **Registration**: Create new accounts with email and password.
+- **Logout**: Log out securely to protect your data.
+
+### ✍️ Encrypted Notes:
+- **Create, edit, and delete notes** securely.
+- **Self-Destructing Notes**: Notes will automatically delete after a set time.
+- **Encryption**: Notes are stored encrypted in the database to ensure no one can read them.
+
+### 🕶️ Secret Agent Mode:
+- **Agent Avatars**: Customize your agent profile.
+- **Stealth Mode**: The interface can be disguised as a "safe" app when necessary.
+- **Mission Tracker**: Organize and manage your assignments and objectives.
+
+### 💻 Cyberpunk Theme:
+- **Cyberpunk Neon Aesthetic**: Navy blue and neon blue themes with dark mode.
+- **Minimalist Interface**: A clean, distraction-free interface designed for ease of use.
+
+### 💬 Messaging:
+- **Encrypted Messaging**: Securely send messages to other agents.
+
+### 📂 Additional Features:
+- **Backup Notes**: Download encrypted backups of your notes.
+- **Offline Mode**: Access and manage your notes offline.
+
+---
+
+## Demo:
+Try the demo of CryoNote (link to live demo).
+
+---
+
+## Tech Stack:
+- **Frontend**: HTML, CSS, PHP (for the UI and client-side interactions)
+- **Backend**: PHP (handles login, note encryption, and database interactions)
+- **Database**: MySQL (stores user data, notes, and messages)
+- **Encryption**: AES encryption used for storing encrypted notes.
+
+---
+
+## Setup & Installation:
+
+### Prerequisites:
+- A local or remote server that supports PHP and MySQL (e.g., Apache, Nginx, etc.).
+- MySQL database (for storing user data, notes, and messages).
+
+### Steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/CryoNote.git
+   cd CryoNote
+
+    Set up the database:
+
+        Import the database schema located in the "database/" folder (or create one manually).
+
+        Update the database credentials in "config.php" for MySQL connection.
+
+    Configure the server:
+
+        Upload the files to your web server or set up a local environment using tools like XAMPP or WAMP for development.
+
+        Ensure the server is configured to run PHP files correctly.
+
+    Access the app:
+
+        Open your browser and navigate to "http://localhost/cryo-note/" or your live URL.
+
+Contributing:
+
+    Fork this repository.
+
+    Create a new branch (git checkout -b feature-name).
+
+    Make your changes and commit them (git commit -m 'Add new feature').
+
+    Push to the branch (git push origin feature-name).
+
+    Open a pull request.
+
+License:
+
+CryoNote is licensed under the MIT License - see the LICENSE file for details.
+Future Features:
+
+    Biometric Authentication (e.g., fingerprint or facial recognition).
+
+    Voice-to-Text Notes: Convert voice notes into text.
+
+    Two-Factor Authentication (2FA) for added security.
+
+    Voice Messaging: Secure voice messaging between agents.
+
+    Encrypted File Storage: Store sensitive files securely with encryption.
+
+Credits:
+
+    Cyberpunk Neon Theme: Inspired by futuristic aesthetics from popular media.
+
+    Encryption Implementation: AES encryption was implemented following security best practices.
+
+    PHP, MySQL: Standard technologies used to ensure the app is lightweight and efficient.
+
+Project by:
+
+Your Name (https://github.com/adiz777)
+
+Feel free to contribute, report bugs, or ask questions by opening issues or submitting pull requests.
