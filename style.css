@@ -1,0 +1,240 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #00b3b3; /* Neon teal */
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008080; /* Darker neon teal */
+}
+
+/* Header styles */
+header {
+    background-color: #181818; /* Darker background for header */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #00b3b3; /* Neon teal */
+    font-size: 2rem;
+}
+
+/* Dashboard page styles */
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #222222; /* Darker container background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    color: #00b3b3; /* Neon teal */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.note-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-item {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.note-item h3 {
+    color: #00b3b3; /* Neon teal */
+}
+
+.note-item p {
+    color: #f1f1f1;
+}
+
+.note-actions {
+    margin-top: 10px;
+}
+
+.note-actions a {
+    margin-right: 15px;
+    color: #00b3b3;
+}
+
+.note-actions a:hover {
+    color: #008080;
+}
+
+/* Login page styles */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #00b3b3;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00b3b3;
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+input:focus {
+    border-color: #008080;
+    outline: none;
+}
+
+button.login-btn {
+    width: 100%;
+    background-color: #00b3b3;
+    color: #121212;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.login-btn:hover {
+    background-color: #008080;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Add and Edit Note pages styles */
+.add-note-container,
+.edit-note-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.add-note-container h2,
+.edit-note-container h2 {
+    text-align: center;
+    color: #00b3b3;
+    font-size: 2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00b3b3;
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+textarea:focus {
+    border-color: #008080;
+    outline: none;
+}
+
+button.add-note-btn,
+button.edit-note-btn {
+    width: 100%;
+    background-color: #00b3b3;
+    color: #121212;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add-note-btn:hover,
+button.edit-note-btn:hover {
+    background-color: #008080;
+}
+
+/* Note Display styles */
+.note-title {
+    color: #00b3b3;
+    font-size: 1.5rem;
+}
+
+.note-content {
+    color: #f1f1f1;
+    font-size: 1rem;
+}
+
+/* Add Secret Agent Theme Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Custom Neon Effects */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3, 0 0 15px #00b3b3, 0 0 20px #00b3b3, 0 0 25px #00b3b3;
+    }
+    50% {
+        text-shadow: 0 0 10px #00b3b3, 0 0 20px #00b3b3, 0 0 30px #00b3b3, 0 0 40px #00b3b3, 0 0 50px #00b3b3;
+    }
+    100% {
+        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3, 0 0 15px #00b3b3, 0 0 20px #00b3b3, 0 0 25px #00b3b3;
+    }
+}
+
+h1, h2, h3, p {
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Styling for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
