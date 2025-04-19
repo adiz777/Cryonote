@@ -3,21 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
-    background-color: #121212; /* Dark background */
-    color: #f1f1f1; /* Light text */
+    background-color: #121212;
+    color: #f1f1f1;
     padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: #00b3b3;
+}
+
+a:hover {
+    color: #00e0e0;
 }
 
 button {
-    background-color: #00b3b3; /* Neon teal */
+    background-color: #00b3b3;
     color: #121212;
     border: none;
     padding: 10px 20px;
@@ -26,33 +33,33 @@ button {
 }
 
 button:hover {
-    background-color: #008080; /* Darker neon teal */
+    background-color: #008080;
 }
 
 /* Header styles */
 header {
-    background-color: #181818; /* Darker background for header */
+    background-color: #181818;
     padding: 10px 0;
     text-align: center;
 }
 
 header h1 {
-    color: #00b3b3; /* Neon teal */
+    color: #00b3b3;
     font-size: 2rem;
 }
 
-/* Dashboard page styles */
+/* Dashboard */
 .dashboard-container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #222222; /* Darker container background */
+    background-color: #222222;
     padding: 20px;
     border-radius: 10px;
 }
 
 .dashboard-container h2 {
     text-align: center;
-    color: #00b3b3; /* Neon teal */
+    color: #00b3b3;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
@@ -71,7 +78,7 @@ header h1 {
 }
 
 .note-item h3 {
-    color: #00b3b3; /* Neon teal */
+    color: #00b3b3;
 }
 
 .note-item p {
@@ -91,7 +98,7 @@ header h1 {
     color: #008080;
 }
 
-/* Login page styles */
+/* Login */
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -111,7 +118,8 @@ header h1 {
     margin-bottom: 20px;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -120,12 +128,15 @@ input {
     color: #f1f1f1;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     border-color: #008080;
     outline: none;
 }
 
-button.login-btn {
+button.login-btn,
+button.add-note-btn,
+button.edit-note-btn {
     width: 100%;
     background-color: #00b3b3;
     color: #121212;
@@ -135,7 +146,7 @@ button.login-btn {
     cursor: pointer;
 }
 
-button.login-btn:hover {
+button:hover {
     background-color: #008080;
 }
 
@@ -146,7 +157,7 @@ button.login-btn:hover {
     text-align: center;
 }
 
-/* Add and Edit Note pages styles */
+/* Add & Edit Note */
 .add-note-container,
 .edit-note-container {
     max-width: 500px;
@@ -164,37 +175,7 @@ button.login-btn:hover {
     font-size: 2rem;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #00b3b3;
-    background-color: #2c2c2c;
-    color: #f1f1f1;
-}
-
-textarea:focus {
-    border-color: #008080;
-    outline: none;
-}
-
-button.add-note-btn,
-button.edit-note-btn {
-    width: 100%;
-    background-color: #00b3b3;
-    color: #121212;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button.add-note-btn:hover,
-button.edit-note-btn:hover {
-    background-color: #008080;
-}
-
-/* Note Display styles */
+/* Note Display */
 .note-title {
     color: #00b3b3;
     font-size: 1.5rem;
@@ -205,26 +186,16 @@ button.edit-note-btn:hover {
     font-size: 1rem;
 }
 
-/* Add Secret Agent Theme Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-/* Custom Neon Effects */
+/* Neon Glow Animation */
 @keyframes neonGlow {
     0% {
-        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3, 0 0 15px #00b3b3, 0 0 20px #00b3b3, 0 0 25px #00b3b3;
+        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3;
     }
     50% {
-        text-shadow: 0 0 10px #00b3b3, 0 0 20px #00b3b3, 0 0 30px #00b3b3, 0 0 40px #00b3b3, 0 0 50px #00b3b3;
+        text-shadow: 0 0 20px #00b3b3, 0 0 30px #00e0e0;
     }
     100% {
-        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3, 0 0 15px #00b3b3, 0 0 20px #00b3b3, 0 0 25px #00b3b3;
+        text-shadow: 0 0 5px #00b3b3, 0 0 10px #00b3b3;
     }
 }
 
@@ -232,9 +203,86 @@ h1, h2, h3, p {
     animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
 
-/* Styling for forms */
-form {
+/* Landing Page */
+.landing-page {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0a0a0a, #121212);
+    text-align: center;
+}
+
+.landing-container {
+    padding: 40px;
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00b3b3;
+}
+
+.glow-text {
+    font-size: 3rem;
+    color: #00b3b3;
+    text-shadow: 0 0 10px #00fafa;
+    animation: neonGlow 2s infinite alternate;
+}
+
+.tagline {
+    color: #999;
+    margin: 15px 0 30px;
+    font-size: 1.2rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-glow,
+.btn-glow-outline {
+    padding: 12px 30px;
+    border: 2px solid #00b3b3;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-glow {
+    background-color: #00b3b3;
+    color: #121212;
+}
+
+.btn-glow-outline {
+    background-color: transparent;
+    color: #00b3b3;
+}
+
+.btn-glow:hover {
+    background-color: #00e0e0;
+}
+
+.btn-glow-outline:hover {
+    background-color: #00b3b3;
+    color: #121212;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00b3b3;
+    border-radius: 10px;
 }
